@@ -20,7 +20,7 @@ public class CategoryController {
 	public ModelAndView listCategory(){
 		ModelAndView mav = new ModelAndView();
 		List<Category> cs = categoryService.list();
-		
+		  
 		//放入转发参数
 		mav.addObject("cs",cs);
 		//放入jsp路径
